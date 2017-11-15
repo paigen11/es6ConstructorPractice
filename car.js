@@ -13,8 +13,9 @@ class Car {
         return this.speed -= lessSpeed;
     }
     toString(){
-        return "This car's color is " + this.color + ', the make is ' + this.make + ', the model is ' + this.model
-            + ', the speed is ' + this.speed;
+        const convertibleString = this.convertible ? 'a convertible' : 'not a convertible';
+        return `This car's color is  ${this.color}, the make is ${this.make}, the model is  ${this.model},
+         the speed is ${this.speed}', it is ${convertibleString}`;
     }
 }
 
